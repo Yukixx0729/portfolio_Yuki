@@ -2,7 +2,7 @@ import { Heading, Flex } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <div>
+    <div id="section-3">
       <Heading textAlign="center" className="main-title">
         Skills Set
       </Heading>

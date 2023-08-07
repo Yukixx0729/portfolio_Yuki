@@ -1,11 +1,11 @@
-import { Stack, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 import "./Projects.css";
 const Projects = () => {
   const projectsDetails = [
     {
       name: "Doggie Chat",
-      img: "../../public/chat.png",
-      img2: "../../public/event.png",
+      img: "/chat.png",
+      img2: "/event.png",
       demo: false,
       right: false,
       github: "https://github.com/Yukixx0729/DoggieTalk",
@@ -16,8 +16,8 @@ const Projects = () => {
     },
     {
       name: "Job Tracker",
-      img: "../../public/job1.jpg",
-      img2: "../../public/job2.png",
+      img: "/job1.jpg",
+      img2: "/job2.png",
       demo: false,
       github: "https://github.com/Yukixx0729/Job-Tracker-App",
       right: true,
@@ -28,8 +28,8 @@ const Projects = () => {
     },
     {
       name: "Joke Search",
-      img: "../../public/joke1.png",
-      img2: "../../public/joke2.png",
+      img: "./joke1.png",
+      img2: "/joke2.png",
       demo: true,
       right: false,
       github: "https://github.com/Yukixx0729/Joke-search-app",
@@ -41,7 +41,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="section-2">
       <Heading mb="50px" textAlign="center" className="main-title">
         Project gallery ---{" "}
         <span>
@@ -52,7 +52,7 @@ const Projects = () => {
       <Flex direction="column">
         {projectsDetails.map((project) => {
           return (
-            <div className="projects">
+            <div className="projects" key={project.name}>
               {project.right ? (
                 <Flex direction="row" mb="40px" justifyContent="space-between">
                   <Flex
@@ -70,7 +70,7 @@ const Projects = () => {
                       <a href={project.github}>Github</a>
                     </div>
                   </Flex>
-                  <Stack direction="row">
+                  <div className="img-container">
                     <Image
                       src={project.img}
                       alt={project.name}
@@ -84,11 +84,11 @@ const Projects = () => {
                       width="350px"
                       height="250px"
                     />
-                  </Stack>
+                  </div>
                 </Flex>
               ) : (
                 <Flex direction="row" mb="40px" justifyContent="space-between">
-                  <Stack direction="row">
+                  <div className="img-container">
                     <Image
                       src={project.img}
                       alt={project.name}
@@ -102,7 +102,7 @@ const Projects = () => {
                       width="350px"
                       height="250px"
                     />
-                  </Stack>
+                  </div>
                   <Flex
                     direction="column"
                     justifyContent="center"

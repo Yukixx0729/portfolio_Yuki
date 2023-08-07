@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <Flex direction="column">
-      {/* <NavBar /> */}
+      <NavBar />
       <AboutMe />
       <Projects />
       <Skills />

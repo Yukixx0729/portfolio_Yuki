@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div className="nav-about-container">
+    <div className="nav-about-container" id="section-1">
       <Flex direction="column">
         <div className="aboutme">
           <p>
@@ -17,7 +17,7 @@ const AboutMe = () => {
       </Flex>
       <div className="pic-title">
         <div className="pic-container">
-          <img src="../../public/me.jpeg" alt="self picture " />
+          <img src="/me.jpeg" alt="self picture " />
         </div>
         <Box className="title">
           <Heading>Yubin Zeng</Heading>
