@@ -1,0 +1,55 @@
+.nav-about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #303b2e;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.navBar li {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.pic-title {
+  display: flex;
+  background-color: #303b2e;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.pic-container {
+  justify-content: center;
+  padding: 30px;
+}
+
+.pic-container img {
+  border-radius: 100px;
+  width: 200px;
+  height: 100%;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+.aboutme {
+  padding: 20px;
+}
+
+.aboutme p {
+  padding: 150px;
+  font-size: 26px;
+}

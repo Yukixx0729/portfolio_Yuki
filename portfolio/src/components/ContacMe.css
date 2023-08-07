@@ -1,0 +1,36 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.contact-info {
+  display: flex;
+  background-color: #303b2e;
+  color: white;
+
+  flex-grow: 3;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info a {
+  list-style: none;
+  color: white;
+}
+
+.contact-info ul {
+  list-style-type: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 5;
+  padding: 20px;
+}
