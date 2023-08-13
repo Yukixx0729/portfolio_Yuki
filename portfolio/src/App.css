@@ -24,8 +24,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f1f1f1; /* Set the background color according to your design */
-  /* Add any other styles you want for your navigation bar */
+  background-color: #f1f1f1;
 }
 
 .navBar a {
@@ -35,4 +34,22 @@ body {
 
 #section-3 p {
   font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  #section-3 {
+    font-weight: bolder;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .navBar {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navBar a {
+    font-size: 10px;
+    font-weight: bold;
+  }
 }

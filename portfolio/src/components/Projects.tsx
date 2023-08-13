@@ -49,12 +49,12 @@ const Projects = () => {
           projects.
         </span>
       </Heading>
-      <Flex direction="column">
+      <Flex direction="column" className="nested-container">
         {projectsDetails.map((project) => {
           return (
             <div className="projects" key={project.name}>
               {project.right ? (
-                <Flex direction="row" mb="40px" justifyContent="space-between">
+                <div className="detail">
                   <Flex
                     direction="column"
                     justifyContent="center"
@@ -85,9 +85,9 @@ const Projects = () => {
                       height="250px"
                     />
                   </div>
-                </Flex>
+                </div>
               ) : (
-                <Flex direction="row" mb="40px" justifyContent="space-between">
+                <div className="detail">
                   <div className="img-container">
                     <Image
                       src={project.img}
@@ -118,7 +118,7 @@ const Projects = () => {
                       <a href={project.github}>Github</a>
                     </div>
                   </Flex>
-                </Flex>
+                </div>
               )}
             </div>
           );
