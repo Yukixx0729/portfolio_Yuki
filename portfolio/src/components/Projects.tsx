@@ -3,7 +3,20 @@ import "./Projects.css";
 const Projects = () => {
   const projectsDetails = [
     {
-      name: "Doggie Chat",
+      name: "Trip Wise -- Your AI Trip Planning Helper",
+      img: "/1.png",
+      img2: "/2.png",
+      demo: true,
+      right: true,
+      github: "https://github.com/Yukixx0729/TripWise",
+      demoUrl: "https://trip-wise-omega.vercel.app/",
+      stack:
+        "Stack: Node, React, Next.js 13 framework, Typescript, HTML, PostgreSQL, Prisma(ORM), OpenAI, Clerk , Google Map, TailwindCSS",
+      description:
+        "Project summary: TripWise is a full stuck app which allows users to log in with google and to generate their own trip plan with OpenAI, and they would be able to create/delete/update the plans. And users are also allow to check where their plans’ destination on a google map with Pins. ",
+    },
+    {
+      name: "Doggie Chat -- Realtime Chat App",
       img: "/chat.png",
       img2: "/event.png",
       demo: false,
@@ -15,7 +28,7 @@ const Projects = () => {
         "Project summary: Doggie talk app is a full stack app built for dog lovers/owners to social. All users will be joined in the big community for default and they can create PM chat with other owners, also users are allow to post any meetups events there.",
     },
     {
-      name: "Job Tracker",
+      name: "Job Tracker -- Make job seeking easier",
       img: "/job1.jpg",
       img2: "/job2.png",
       demo: false,
@@ -27,7 +40,7 @@ const Projects = () => {
         "Main responsibilities: front-end : homepage render(due job and todo task) file-page render back-end: REST API for file(upload, delete, download file)",
     },
     {
-      name: "Joke Search",
+      name: "Joke Search -- Add more fun to life",
       img: "./joke1.png",
       img2: "/joke2.png",
       demo: true,
